@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bloggraphql-dev-143809-authRole",
+      "UnauthRoleArn": "arn:aws:iam::880167439290:role/amplify-bloggraphql-dev-143809-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::880167439290:role/amplify-bloggraphql-dev-143809-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-bloggraphql-dev-143809-deployment",
+      "UnauthRoleName": "amplify-bloggraphql-dev-143809-unauthRole",
+      "StackName": "amplify-bloggraphql-dev-143809",
+      "StackId": "arn:aws:cloudformation:us-east-1:880167439290:stack/amplify-bloggraphql-dev-143809/e84ef670-4326-11ec-be68-0e1db4f6fc3b",
+      "AmplifyAppId": "d1y8lqngrn2uuw"
+    }
+  }
+}
