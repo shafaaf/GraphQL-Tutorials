@@ -30,6 +30,7 @@ Query at: http://localhost:4000/
 ```
 
 Mutiple queries:
+```
 query MultipleQueries {
   hello (name: "shafaaf")
   user {
@@ -37,8 +38,10 @@ query MultipleQueries {
     username
   }
 }
+```
 
 Example mutation:
+```
 mutation MyMutation {
   register (userInfo: {username: "Shafaaf", password: "myPassword", age: 12}) {
     errors {
@@ -52,8 +55,10 @@ mutation MyMutation {
     }
   }
 }
+```
 
 More complex:
+```
 query Complex {
   user {
     id
@@ -61,3 +66,4 @@ query Complex {
     firstLetterOfUsername
   }
 }
+```
