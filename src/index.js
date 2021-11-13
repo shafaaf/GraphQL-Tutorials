@@ -1,8 +1,14 @@
-import { ApolloServer, gql } from "apollo-server-express";
+import { ApolloServer} from "apollo-server-express";
 import express from "express";
 import mongoose from "mongoose";
 import { resolvers } from "./resolvers";
 import { typeDefs } from "./typeDefs";
+
+const dotenv = require('dotenv');
+dotenv.config();
+const username = process.env.MONGODB_USERNAME;
+const password = process.env.MONGODB_PASSSWORD;
+const clusterUrl = process.env.CLUSTER_URL;
 
 const startServer = async () => {
   const app = express();
@@ -14,7 +20,9 @@ const startServer = async () => {
 
   server.applyMiddleware({ app });
 
-  await mongoose.connect("mongodb://localhost:27017/test3", {
+  const url = `mongodb+srv://${username}:${password}@${clusterUrl}/graphqlTestDb`
+
+  await mongoose.connect(url, {
     useNewUrlParser: true
   });
 
@@ -24,3 +32,4 @@ const startServer = async () => {
 };
 
 startServer();
+
