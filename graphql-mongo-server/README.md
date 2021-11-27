@@ -1,5 +1,7 @@
 ## Graphql with Node, MongoDB
 
+- Uses apollo-server-express
+
 From: https://www.youtube.com/watch?v=YFkJGEefgU8&t=335s&ab_channel=BenAwad
 
 For setup, put in .env file in root folder
