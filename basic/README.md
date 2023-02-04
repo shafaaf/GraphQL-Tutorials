@@ -23,6 +23,16 @@ query {
     }
 }
 
+query {
+    author(id: 1) {
+        id
+        name
+        books {
+            id
+        }
+    }
+}
+
 mutation {
     addBook (name: "RANODM book", authorId: 1)
 }
